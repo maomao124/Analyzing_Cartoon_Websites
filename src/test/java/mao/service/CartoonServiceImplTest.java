@@ -1,6 +1,7 @@
 package mao.service;
 
 import mao.entity.Cartoon;
+import mao.entity.CartoonItem;
 import mao.net.HTTP;
 import mao.net.RestfulHTTP;
 import mao.net.SimpleHTTPImpl;
@@ -73,5 +74,12 @@ class CartoonServiceImplTest
         List<Cartoon> cartoonList = cartoonService.getCartoonList("http://m.qiman57.com/rank/2-1.html");
         System.out.println(cartoonList);
         System.out.println(cartoonList.size());
+    }
+
+    @Test
+    void getCartoonItem()
+    {
+        List<CartoonItem> cartoonItemList = cartoonService.getCartoonItem("http://m.qiman57.com/bookchapter/", 21429);
+        System.out.println(cartoonItemList);
     }
 }

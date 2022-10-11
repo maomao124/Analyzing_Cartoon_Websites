@@ -1,6 +1,7 @@
 package mao.service;
 
 import mao.entity.Cartoon;
+import mao.entity.CartoonItem;
 
 import java.util.List;
 
@@ -20,4 +21,6 @@ import java.util.List;
 public interface CartoonService
 {
     List<Cartoon> getCartoonList(String urlString);
+
+    List<CartoonItem> getCartoonItem(String urlString, int id);
 }
