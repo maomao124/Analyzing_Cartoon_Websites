@@ -76,10 +76,27 @@ class CartoonServiceImplTest
         System.out.println(cartoonList.size());
     }
 
+
+    @Test
+    void getCartoonItemByHtml()
+    {
+        List<CartoonItem> cartoonItemList = cartoonService.getCartoonItemByHtml(16041);
+        System.out.println(cartoonItemList);
+    }
+
+    @Test
+    void getCartoonItemByJson()
+    {
+        List<CartoonItem> list = cartoonService.getCartoonItemByJson(16041);
+        System.out.println(list);
+    }
+
     @Test
     void getCartoonItem()
     {
-        List<CartoonItem> cartoonItemList = cartoonService.getCartoonItem("http://m.qiman57.com/bookchapter/", 21429);
+//        List<CartoonItem> cartoonItemList = cartoonService.getCartoonItem("http://m.qiman57.com/bookchapter/", 21429);
+//        System.out.println(cartoonItemList);
+        List<CartoonItem> cartoonItemList = cartoonService.getCartoonItem(16041);
         System.out.println(cartoonItemList);
     }
 }

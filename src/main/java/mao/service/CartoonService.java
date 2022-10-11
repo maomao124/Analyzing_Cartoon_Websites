@@ -22,5 +22,5 @@ public interface CartoonService
 {
     List<Cartoon> getCartoonList(String urlString);
 
-    List<CartoonItem> getCartoonItem(String urlString, int id);
+    List<CartoonItem> getCartoonItem(int id);
 }
