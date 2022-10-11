@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>好看的漫画周热门榜 - 奇漫屋</title>
+    <meta name="keywords" content="2019年漫画连载排行榜，好看的漫画排行榜,小说连载排行榜,连载小说排行榜">
+    <meta name="description" content="好看的小说排行榜,小说连载排行榜,连载小说排行榜">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="apple-mobile-web-app-title" content="奇漫屋">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta http-equiv="Cache-Control" content="no-transform"/>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/qiman5_all.css?v=1.8888888">
+
+
+    <script>
+        !function (a, b)
+        {
+            function c()
+            {
+                var b = f.getBoundingClientRect().width;
+                b / i > 540 && (b = 540 * i);
+                var c = b / 10;
+                f.style.fontSize = c + "px", k.rem = a.rem = c
+            }
+
+            var d, e = a.document, f = e.documentElement, g = e.querySelector('meta[name="viewport"]'), h = e.querySelector('meta[name="flexible"]'), i = 0, j = 0, k = b.flexible || (b.flexible = {});
+            if (g)
+            {
+                console.warn("将根据已有的meta标签来设置缩放比例");
+                var l = g.getAttribute("content").match(/initial\-scale=([\d\.]+)/);
+                l && (j = parseFloat(l[1]), i = parseInt(1 / j))
+            }
+            else if (h)
+            {
+                var m = h.getAttribute("content");
+                if (m)
+                {
+                    var n = m.match(/initial\-dpr=([\d\.]+)/), o = m.match(/maximum\-dpr=([\d\.]+)/);
+                    n && (i = parseFloat(n[1]), j = parseFloat((1 / i).toFixed(2))), o && (i = parseFloat(o[1]), j = parseFloat((1 / i).toFixed(2)))
+                }
+            }
+            if (!i && !j)
+            {
+                var p = a.navigator.userAgent, q = (!!p.match(/android/gi), !!p.match(/iphone/gi)), r = q && !!p.match(/OS 9_3/), s = a.devicePixelRatio;
+                i = q && !r ? s >= 3 && (!i || i >= 3) ? 3 : s >= 2 && (!i || i >= 2) ? 2 : 1 : 1, j = 1 / i
+            }
+            if (f.setAttribute("data-dpr", i), !g)
+            {
+                if (g = e.createElement("meta"), g.setAttribute("name", "viewport"), g.setAttribute("content", "initial-scale=" + j + ", maximum-scale=" + j + ", minimum-scale=" + j + ", user-scalable=no"), f.firstElementChild)
+                {
+                    f.firstElementChild.appendChild(g);
+                }
+                else
+                {
+                    var t = e.createElement("div");
+                    t.appendChild(g), e.write(t.innerHTML)
+                }
+            }
+            a.addEventListener("resize", function ()
+            {
+                clearTimeout(d), d = setTimeout(c, 300)
+            }, !1), a.addEventListener("pageshow", function (a)
+            {
+                a.persisted && (clearTimeout(d), d = setTimeout(c, 300))
+            }, !1), "complete" === e.readyState ? e.body.style.fontSize = 12 * i + "px" : e.addEventListener("DOMContentLoaded", function ()
+            {
+                e.body.style.fontSize = 12 * i + "px"
+            }, !1), c(), k.dpr = a.dpr = i, k.refreshRem = c, k.rem2px = function (a)
+            {
+                var b = parseFloat(a) * this.rem;
+                return "string" == typeof a && a.match(/rem$/) && (b += "px"), b
+            }, k.px2rem = function (a)
+            {
+                var b = parseFloat(a) / this.rem;
+                return "string" == typeof a && a.match(/px$/) && (b += "rem"), b
+            }
+        }(window, window.lib || (window.lib = {}));
+    </script>
+
+</head>
+
+<body class="p-top" data-page_id="107">
+
+<header class="header">
+    <a class="go-back" href="/"><i class="ift-back"></i></a>
+    <span>周热门榜</span>
+    <a href="javascript:;"><i class="ift-nav_search"></i></a>
+</header>
+<div class="search_header">
+    <div class="search_box">
+        <form action="/spotlight/" method="get" class="search_form">
+            <input class="search_input" type="search" name="keyword" placeholder="请输入搜索关键字" autocomplete="off">
+        </form>
+        <span class="search_clear_cion"></span>
+    </div>
+    <span class="search_btn">取消</span>
+</div>
+<main class="main under-header" data-name="popular" data-type="1">
+    <div class="rank-nav">
+        <ul class="clearfix">
+            <li class="rank-nav-item">
+                <a href="/rank/4-1.html">
+                    人气榜</a>
+            </li>
+            <li class="rank-nav-item">
+                <a href="/rank/1-1.html">日读榜</a>
+            </li>
+            <li class="rank-nav-item active">
+                <a href="/rank/2-1.html">周读榜</a>
+            </li>
+            <li class="rank-nav-item">
+                <a href="/rank/3-1.html">月读榜</a>
+            </li>
+            <li class="rank-nav-item">
+                <a href="/rank/6-1.html">新作榜</a>
+            </li>
+            <li class="rank-nav-item">
+                <a href="/rank/5-1.html">最新榜</a>
+            </li>
+        </ul>
+    </div>
+    <div class="guide-download">
+        <img src="https://p3.dcarimg.com/origin/1375200000cd4a1996591" alt="" class="logo">
+        <div class="tips"><p class="van-p_1">安装奇漫屋APP</p>
+            <p class="van-p_2">奇漫屋APP正式上线了,你想看的漫画都在这</p></div>
+        <a href="http://downapk.xiazaimanhua.com/down/qimanwu.apk" class="">
+            <button hollow="" class="download-btn"><span class="van-button__text">APP下载</span></button>
+        </a></div>
+    <div class="rank-list">
+
+        <div class="rank-item clearfix">
+            <a href="/16041/">
+                <img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                     style="background-image: url(http://si1.go2yd.com/get-image/0ZzmoBN0DmS)" alt="武炼巅峰"
+                     data-src="https://p3.dcarimg.com/origin/ffbc0002b033d6f76f81">
+            </a>
+            <div class="comic-item-info">
+                <a href="/16041/">
+                    <p class="comic-name">武炼巅峰</p>
+                    <p class="comic-author">噼咔噼</p>
+                    <p class="comic-tip">太墟境篇-反了你们</p></a>
+                <p class="comic-click-count"></p></div>
+            <div class="rank-top-tag rank-1"></div>
+        </div>
+        <div class="rank-item clearfix">
+            <a href="/21429/">
+                <img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                     style="background-image: url(http://si1.go2yd.com/get-image/0ZzmoBN0DmS)" alt="大王饶命"
+                     data-src="http://p3.dcarimg.com/large/pgc-image/cd0751317a9042678a7c48dc7deb2038">
+            </a>
+            <div class="comic-item-info">
+                <a href="/21429/">
+                    <p class="comic-name">大王饶命</p>
+                    <p class="comic-author">阅动文化</p>
+                    <p class="comic-tip">596 傻雇主</p></a>
+                <p class="comic-click-count"></p></div>
+            <div class="rank-top-tag rank-2"></div>
+        </div>
+        <div class="rank-item clearfix">
+            <a href="/24364/">
+                <img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                     style="background-image: url(http://si1.go2yd.com/get-image/0ZzmoBN0DmS)" alt="牧龙师"
+                     data-src="https://p3.dcarimg.com/origin/pgc-image/e63a0380a7684c49b3435f267773d9a6">
+            </a>
+            <div class="comic-item-info">
+                <a href="/24364/">
+                    <p class="comic-name">牧龙师</p>
+                    <p class="comic-author">阅文漫画</p>
+                    <p class="comic-tip">260 唤魔师来犯</p></a>
+                <p class="comic-click-count"></p></div>
+            <div class="rank-top-tag rank-3"></div>
+        </div>
+        <div class="rank-item clearfix">
+            <a href="/9845/">
+                <img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                     style="background-image: url(http://si1.go2yd.com/get-image/0ZzmoBN0DmS)" alt="全职法师"
+                     data-src="https://p3.dcarimg.com/origin/ff8d000147a545b72a1e">
+            </a>
+            <div class="comic-item-info">
+                <a href="/9845/">
+                    <p class="comic-name">全职法师</p>
+                    <p class="comic-author">阅文漫画</p>
+                    <p class="comic-tip">935 首脑</p></a>
+                <p class="comic-click-count"></p></div>
+            <div class=rank-tag
+            ">4
+        </div>
+    </div>
+    <div class="rank-item clearfix">
+        <a href="/20454/">
+            <img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                 style="background-image: url(http://si1.go2yd.com/get-image/0ZzmoBN0DmS)" alt="炼气练了三千年"
+                 data-src="https://p3.dcarimg.com/origin/ff180000bc7a74a03f2f">
+        </a>
+        <div class="comic-item-info">
+            <a href="/20454/">
+                <p class="comic-name">炼气练了三千年</p>
+                <p class="comic-author">刺猬猫阅读图：刺猬猫阅读X午后漫画 文：精装激光雕刻机</p>
+                <p class="comic-tip">313回-像你这样的猛男</p></a>
+            <p class="comic-click-count"></p></div>
+        <div class=rank-tag
+        ">5
+    </div>
+    </div>
+    <div class="rank-item clearfix">
+        <a href="/21127/">
+            <img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                 style="background-image: url(http://si1.go2yd.com/get-image/0ZzmoBN0DmS)" alt="从前有座灵剑山"
+                 data-src="https://p3.dcarimg.com/origin/ffbe000055760bfa2ee2">
+        </a>
+        <div class="comic-item-info">
+            <a href="/21127/">
+                <p class="comic-name">从前有座灵剑山</p>
+                <p class="comic-author">鲜漫文化图：猪画×小莫 文：国王陛下</p>
+                <p class="comic-tip">第八百一十四章</p></a>
+            <p class="comic-click-count"></p></div>
+        <div class=rank-tag
+        ">6
+    </div>
+    </div>
+    <div class="rank-item clearfix">
+        <a href="/23903/">
+            <img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                 style="background-image: url(http://si1.go2yd.com/get-image/0ZzmoBN0DmS)" alt="解锁末世的99个女主"
+                 data-src="https://p3.dcarimg.com/origin/pgc-image/b19bde31976646c09b7e3d0f97421cb7">
+        </a>
+        <div class="comic-item-info">
+            <a href="/23903/">
+                <p class="comic-name">解锁末世的99个女主</p>
+                <p class="comic-author">两只猫先生</p>
+                <p class="comic-tip">175话 加入我们的大家庭</p></a>
+            <p class="comic-click-count"></p></div>
+        <div class=rank-tag
+        ">7
+    </div>
+    </div>
+    <div class="rank-item clearfix">
+        <a href="/24411/">
+            <img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                 style="background-image: url(http://si1.go2yd.com/get-image/0ZzmoBN0DmS)" alt="史上第一祖师爷"
+                 data-src="https://p3.dcarimg.com/origin/pgc-image/981b23b3f5a8433faaa26d447fabe3ec">
+        </a>
+        <div class="comic-item-info">
+            <a href="/24411/">
+                <p class="comic-name">史上第一祖师爷</p>
+                <p class="comic-author">噼咔噼</p>
+                <p class="comic-tip">贰佰陆拾陆-重伤？惨胜？</p></a>
+            <p class="comic-click-count"></p></div>
+        <div class=rank-tag
+        ">8
+    </div>
+    </div>
+    <div class="rank-item clearfix">
+        <a href="/23316/">
+            <img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                 style="background-image: url(http://si1.go2yd.com/get-image/0ZzmoBN0DmS)" alt="第一赘婿"
+                 data-src="https://p3.dcarimg.com/origin/137bf00011def8440af5d">
+        </a>
+        <div class="comic-item-info">
+            <a href="/23316/">
+                <p class="comic-name">第一赘婿</p>
+                <p class="comic-author">暂无</p>
+                <p class="comic-tip">第185话 误会大了</p></a>
+            <p class="comic-click-count"></p></div>
+        <div class=rank-tag
+        ">9
+    </div>
+    </div>
+    <div class="rank-item clearfix">
+        <a href="/24583/">
+            <img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                 style="background-image: url(http://si1.go2yd.com/get-image/0ZzmoBN0DmS)" alt="我的女徒弟们都是未来诸天大佬"
+                 data-src="https://p3.dcarimg.com/origin/pgc-image/74df6b81eaaf453ea64db37bab8b05ee">
+        </a>
+        <div class="comic-item-info">
+            <a href="/24583/">
+                <p class="comic-name">我的女徒弟们都是未来诸天大佬</p>
+                <p class="comic-author">SF轻小说</p>
+                <p class="comic-tip">第118话 小小鸽军团出击</p></a>
+            <p class="comic-click-count"></p></div>
+        <div class=rank-tag
+        ">10
+    </div>
+    </div>
+    <div class="rank-item clearfix">
+        <a href="/23821/">
+            <img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                 style="background-image: url(http://si1.go2yd.com/get-image/0ZzmoBN0DmS)" alt="我被困在同一天十万年"
+                 data-src="https://p3.dcarimg.com/origin/137e7000111b0dde30d75">
+        </a>
+        <div class="comic-item-info">
+            <a href="/23821/">
+                <p class="comic-name">我被困在同一天十万年</p>
+                <p class="comic-author">iCiyuan动漫</p>
+                <p class="comic-tip">第229话 该回核心星域了！</p></a>
+            <p class="comic-click-count"></p></div>
+        <div class=rank-tag
+        ">11
+    </div>
+    </div>
+    <div class="rank-item clearfix">
+        <a href="/14311/">
+            <img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                 style="background-image: url(http://si1.go2yd.com/get-image/0ZzmoBN0DmS)" alt="王牌御史"
+                 data-src="https://p3.dcarimg.com/origin/ff6b00007b3ede1fffad">
+        </a>
+        <div class="comic-item-info">
+            <a href="/14311/">
+                <p class="comic-name">王牌御史</p>
+                <p class="comic-author"></p>
+                <p class="comic-tip">634，新思潮了解一下</p></a>
+            <p class="comic-click-count"></p></div>
+        <div class=rank-tag
+        ">12
+    </div>
+    </div>
+    <div class="rank-item clearfix">
+        <a href="/25267/">
+            <img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                 style="background-image: url(http://si1.go2yd.com/get-image/0ZzmoBN0DmS)" alt="摊牌了，我全职业系统！"
+                 data-src="https://p3.dcarimg.com/tos-cn-i-8gu37r9deh/4efd1e7cb7e1447ebe1d0ee9da8af185~noop.webp">
+        </a>
+        <div class="comic-item-info">
+            <a href="/25267/">
+                <p class="comic-name">摊牌了，我全职业系统！</p>
+                <p class="comic-author">阅文漫画</p>
+                <p class="comic-tip">275 自来熟</p></a>
+            <p class="comic-click-count"></p></div>
+        <div class=rank-tag
+        ">13
+    </div>
+    </div>
+    <div class="rank-item clearfix">
+        <a href="/22025/">
+            <img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                 style="background-image: url(http://si1.go2yd.com/get-image/0ZzmoBN0DmS)" alt="全球高武"
+                 data-src="https://p3.dcarimg.com/origin/fe440001034870fd38fb">
+        </a>
+        <div class="comic-item-info">
+            <a href="/22025/">
+                <p class="comic-name">全球高武</p>
+                <p class="comic-author">阅文漫画</p>
+                <p class="comic-tip">第175话 新时代</p></a>
+            <p class="comic-click-count"></p></div>
+        <div class=rank-tag
+        ">14
+    </div>
+    </div>
+    <div class="rank-item clearfix">
+        <a href="/24622/">
+            <img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                 style="background-image: url(http://si1.go2yd.com/get-image/0ZzmoBN0DmS)" alt="地球人实在太凶猛了"
+                 data-src="https://p3.dcarimg.com/origin/pgc-image/1d5e3dd7bfe04d91b52ac7a9f4f22736">
+        </a>
+        <div class="comic-item-info">
+            <a href="/24622/">
+                <p class="comic-name">地球人实在太凶猛了</p>
+                <p class="comic-author">郑九川</p>
+                <p class="comic-tip">第120话 极限流奥义</p></a>
+            <p class="comic-click-count"></p></div>
+        <div class=rank-tag
+        ">15
+    </div>
+    </div>
+    <div class="rank-item clearfix">
+        <a href="/16177/">
+            <img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                 style="background-image: url(http://si1.go2yd.com/get-image/0ZzmoBN0DmS)" alt="斗破苍穹"
+                 data-src="https://p3.dcarimg.com/origin/dc0d0006a8ed3316e584">
+        </a>
+        <div class="comic-item-info">
+            <a href="/16177/">
+                <p class="comic-name">斗破苍穹</p>
+                <p class="comic-author">天蚕土豆</p>
+                <p class="comic-tip">382回 丹塔长老院</p></a>
+            <p class="comic-click-count"></p></div>
+        <div class=rank-tag
+        ">16
+    </div>
+    </div>
+    <div class="rank-item clearfix">
+        <a href="/24820/">
+            <img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                 style="background-image: url(http://si1.go2yd.com/get-image/0ZzmoBN0DmS)" alt="我家老婆来自一千年前"
+                 data-src="https://p3.dcarimg.com/tos-cn-i-8gu37r9deh/cd40a847cd104ab093c9ff5706b95e9e~noop.webp">
+        </a>
+        <div class="comic-item-info">
+            <a href="/24820/">
+                <p class="comic-name">我家老婆来自一千年前</p>
+                <p class="comic-author">阅文漫画</p>
+                <p class="comic-tip">101</p></a>
+            <p class="comic-click-count"></p></div>
+        <div class=rank-tag
+        ">17
+    </div>
+    </div>
+    <div class="rank-item clearfix">
+        <a href="/24363/">
+            <img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                 style="background-image: url(http://si1.go2yd.com/get-image/0ZzmoBN0DmS)" alt="第一序列"
+                 data-src="https://p3.dcarimg.com/origin/pgc-image/3d67caa4d3dd42c2a13046dca9c69bed">
+        </a>
+        <div class="comic-item-info">
+            <a href="/24363/">
+                <p class="comic-name">第一序列</p>
+                <p class="comic-author">博易动漫</p>
+                <p class="comic-tip">154 带你出去转转</p></a>
+            <p class="comic-click-count"></p></div>
+        <div class=rank-tag
+        ">18
+    </div>
+    </div>
+    <div class="rank-item clearfix">
+        <a href="/12780/">
+            <img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                 style="background-image: url(http://si1.go2yd.com/get-image/0ZzmoBN0DmS)" alt="元尊"
+                 data-src="https://p3.dcarimg.com/origin/feec0000c56ce81edba1">
+        </a>
+        <div class="comic-item-info">
+            <a href="/12780/">
+                <p class="comic-name">元尊</p>
+                <p class="comic-author">Dr.大吉天蚕土豆</p>
+                <p class="comic-tip">第441话上 一拳秒杀</p></a>
+            <p class="comic-click-count"></p></div>
+        <div class=rank-tag
+        ">19
+    </div>
+    </div>
+    <div class="rank-item clearfix">
+        <a href="/22449/">
+            <img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                 style="background-image: url(http://si1.go2yd.com/get-image/0ZzmoBN0DmS)" alt="我在末世搬金砖"
+                 data-src="https://p3.dcarimg.com/origin/fec8000115d325c8bc87">
+        </a>
+        <div class="comic-item-info">
+            <a href="/22449/">
+                <p class="comic-name">我在末世搬金砖</p>
+                <p class="comic-author">拾部次元</p>
+                <p class="comic-tip">更新通告</p></a>
+            <p class="comic-click-count"></p></div>
+        <div class=rank-tag
+        ">20
+    </div>
+    </div>        </div>
+</main>
+<div class="getmore">点击加载更多</div>
+<div class="log_div">正在加载...</div>
+<script src="/js/jquery.js"></script>
+<script src="/js/swiper.js"></script>
+<script src="/js/h5.base.js?v=1.536564"></script>
+<script src="/js/layer.js?20190723-1"></script>
+<script src="/js/qiman5.core.js?2019072334"></script>
+
+
+<script>
+    var scroll_num = 0;
+    var scroll_type = 2;
+    $(document).ready(function ()
+    {
+
+    });
+</script>
+
+<div style="display:none">
+    <script src="/js/tj.js?v=1.6666671" language="JavaScript"></script>
+</div>
+</body>
+
+</html>
