@@ -64,18 +64,42 @@ class CartoonServiceImplTest
                 "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 Edg/106.0.1370.37");
         map.put("Referer", "http://m.qiman57.com/rank/2-1.html");
         map.put("Host", "m.qiman57.com");
-        List<Cartoon> cartoonList = cartoonService.getCartoonListByJson(map, 4);
+        List<Cartoon> cartoonList = cartoonService.getCartoonListByJson(map, 4, 2);
         System.out.println(cartoonList);
     }
 
     @Test
     void getCartoonList()
     {
-        List<Cartoon> cartoonList = cartoonService.getCartoonList("http://m.qiman57.com/rank/2-1.html");
+        List<Cartoon> cartoonList = cartoonService.getCartoonList("http://m.qiman57.com/rank/2-1.html", 2);
         System.out.println(cartoonList);
         System.out.println(cartoonList.size());
     }
 
+    @Test
+    void getCartoonList2()
+    {
+        List<Cartoon> cartoonList = cartoonService.getCartoonList("http://m.qiman57.com/rank/4-1.html", 4);
+        System.out.println(cartoonList);
+        System.out.println(cartoonList.size());
+    }
+
+    @Test
+    void getCartoonList3()
+    {
+        List<Cartoon> cartoonList = cartoonService.getCartoonList("http://m.qiman57.com/rank/1-1.html", 1);
+        System.out.println(cartoonList);
+        System.out.println(cartoonList.size());
+    }
+
+
+    @Test
+    void getCartoonList4()
+    {
+        List<Cartoon> cartoonList = cartoonService.getCartoonList("http://m.qiman57.com/rank/6-1.html", 6);
+        System.out.println(cartoonList);
+        System.out.println(cartoonList.size());
+    }
 
     @Test
     void getCartoonItemByHtml()
@@ -94,9 +118,24 @@ class CartoonServiceImplTest
     @Test
     void getCartoonItem()
     {
-//        List<CartoonItem> cartoonItemList = cartoonService.getCartoonItem("http://m.qiman57.com/bookchapter/", 21429);
-//        System.out.println(cartoonItemList);
         List<CartoonItem> cartoonItemList = cartoonService.getCartoonItem(16041);
         System.out.println(cartoonItemList);
     }
+
+    @Test
+    void getCartoonItem2()
+    {
+
+        List<CartoonItem> cartoonItemList = cartoonService.getCartoonItem(21429);
+        System.out.println(cartoonItemList);
+    }
+
+    @Test
+    void getCartoonItem3()
+    {
+        List<CartoonItem> cartoonItemList = cartoonService.getCartoonItem(12583);
+        System.out.println(cartoonItemList);
+    }
+
+
 }

@@ -55,14 +55,14 @@ public class CartoonServiceImpl implements CartoonService
         return cartoonList;
     }
 
-    public List<Cartoon> getCartoonListByJson(Map<String, String> requestHeader, int pageNumber)
+    public List<Cartoon> getCartoonListByJson(Map<String, String> requestHeader, int pageNumber, int type)
     {
-        return this.getCartoonListByJson("http://m.qiman57.com/ajaxf/?page_num=" + pageNumber + "&type=2",
+        return this.getCartoonListByJson("http://m.qiman57.com/ajaxf/?page_num=" + pageNumber + "&type=" + type,
                 requestHeader);
     }
 
     @Override
-    public List<Cartoon> getCartoonList(String urlString)
+    public List<Cartoon> getCartoonList(String urlString, int type)
     {
         Map<String, String> map = new HashMap<>();
         map.put("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) " +
@@ -72,7 +72,7 @@ public class CartoonServiceImpl implements CartoonService
         List<Cartoon> list = new ArrayList<>(100);
         for (int i = 0; i < 6; i++)
         {
-            List<Cartoon> cartoonList = getCartoonListByJson(map, i);
+            List<Cartoon> cartoonList = getCartoonListByJson(map, i, type);
             list.addAll(cartoonList);
         }
         return list;
@@ -81,7 +81,10 @@ public class CartoonServiceImpl implements CartoonService
     @Override
     public List<CartoonItem> getCartoonItem(int id)
     {
-        return null;
+        List<CartoonItem> cartoonItemByHtml = getCartoonItemByHtml(id);
+        List<CartoonItem> cartoonItemByJson = getCartoonItemByJson(id);
+        cartoonItemByHtml.addAll(cartoonItemByJson);
+        return cartoonItemByHtml;
     }
 
     public List<CartoonItem> getCartoonItemByHtml(int id)

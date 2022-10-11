@@ -20,7 +20,7 @@ import java.util.List;
 
 public interface CartoonService
 {
-    List<Cartoon> getCartoonList(String urlString);
+    List<Cartoon> getCartoonList(String urlString, int type);
 
     List<CartoonItem> getCartoonItem(int id);
 }
