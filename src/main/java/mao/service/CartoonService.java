@@ -1,5 +1,9 @@
 package mao.service;
 
+import mao.entity.Cartoon;
+
+import java.util.List;
+
 /**
  * Project name(项目名称)：解析漫画网站
  * Package(包名): mao.service
@@ -15,5 +19,5 @@ package mao.service;
 
 public interface CartoonService
 {
-
+    List<Cartoon> getCartoonList(String urlString);
 }
