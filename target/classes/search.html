@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>搜索结果页 - 斗罗大陆 - 奇漫屋</title>
+    <meta name="keywords" content="斗罗大陆 - 奇漫屋">
+    <meta name="description" content="斗罗大陆 - 奇漫屋">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="apple-mobile-web-app-title" content="奇漫屋">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta http-equiv="Cache-Control" content="no-transform"/>
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/qiman5_all.css?v=1.8888889">
+    <link rel="stylesheet" href="/css/swiper.css?v=1.736523">
+
+    <script>
+        !function (a, b)
+        {
+            function c()
+            {
+                var b = f.getBoundingClientRect().width;
+                b / i > 540 && (b = 540 * i);
+                var c = b / 10;
+                f.style.fontSize = c + "px", k.rem = a.rem = c
+            }
+
+            var d, e = a.document, f = e.documentElement, g = e.querySelector('meta[name="viewport"]'), h = e.querySelector('meta[name="flexible"]'), i = 0, j = 0, k = b.flexible || (b.flexible = {});
+            if (g)
+            {
+                console.warn("将根据已有的meta标签来设置缩放比例");
+                var l = g.getAttribute("content").match(/initial\-scale=([\d\.]+)/);
+                l && (j = parseFloat(l[1]), i = parseInt(1 / j))
+            }
+            else if (h)
+            {
+                var m = h.getAttribute("content");
+                if (m)
+                {
+                    var n = m.match(/initial\-dpr=([\d\.]+)/), o = m.match(/maximum\-dpr=([\d\.]+)/);
+                    n && (i = parseFloat(n[1]), j = parseFloat((1 / i).toFixed(2))), o && (i = parseFloat(o[1]), j = parseFloat((1 / i).toFixed(2)))
+                }
+            }
+            if (!i && !j)
+            {
+                var p = a.navigator.userAgent, q = (!!p.match(/android/gi), !!p.match(/iphone/gi)), r = q && !!p.match(/OS 9_3/), s = a.devicePixelRatio;
+                i = q && !r ? s >= 3 && (!i || i >= 3) ? 3 : s >= 2 && (!i || i >= 2) ? 2 : 1 : 1, j = 1 / i
+            }
+            if (f.setAttribute("data-dpr", i), !g)
+            {
+                if (g = e.createElement("meta"), g.setAttribute("name", "viewport"), g.setAttribute("content", "initial-scale=" + j + ", maximum-scale=" + j + ", minimum-scale=" + j + ", user-scalable=no"), f.firstElementChild)
+                {
+                    f.firstElementChild.appendChild(g);
+                }
+                else
+                {
+                    var t = e.createElement("div");
+                    t.appendChild(g), e.write(t.innerHTML)
+                }
+            }
+            a.addEventListener("resize", function ()
+            {
+                clearTimeout(d), d = setTimeout(c, 300)
+            }, !1), a.addEventListener("pageshow", function (a)
+            {
+                a.persisted && (clearTimeout(d), d = setTimeout(c, 300))
+            }, !1), "complete" === e.readyState ? e.body.style.fontSize = 12 * i + "px" : e.addEventListener("DOMContentLoaded", function ()
+            {
+                e.body.style.fontSize = 12 * i + "px"
+            }, !1), c(), k.dpr = a.dpr = i, k.refreshRem = c, k.rem2px = function (a)
+            {
+                var b = parseFloat(a) * this.rem;
+                return "string" == typeof a && a.match(/rem$/) && (b += "px"), b
+            }, k.px2rem = function (a)
+            {
+                var b = parseFloat(a) / this.rem;
+                return "string" == typeof a && a.match(/px$/) && (b += "rem"), b
+            }
+        }(window, window.lib || (window.lib = {}));
+    </script>
+
+</head>
+
+<body>
+
+<header class="header">
+    <a class="go-back"><i class="ift-back"></i></a>
+    <div class="search-box">
+        <form action="/spotlight/">
+            <input class='search-input' id='searchInput' type='search' name='keyword' placeholder='斗破苍穹'
+                   data-holder='斗破苍穹' value='' autocomplete='off'></form>
+    </div>
+    <span class="search-btn">搜索</span>
+</header>
+<main class="main under-header">
+    <div class="search-result">
+        <div class="comic-list-item clearfix" data-cid="12693">
+            <a class="cover" href="/12693/"><img src="https://p3.dcarimg.com/origin/ff910000e6fa49f719f3" alt="斗罗大陆漫画"></a>
+            <div class="comic-item-info">
+                <p class="comic-name"><a href="/12693/">斗罗大陆</a></p>
+                <p class="comic-author">风炫漫画</p>
+
+                <p class="comic-tags">
+                    <span>连载中</p>
+                <p class="comic-update-at">第336话 森之灾厄（1）</p>
+            </div>
+            <a class="fast-read-btn" href="/12693/">
+                <i class="ift-searchlist_read1"></i>
+                <span>速看</span>
+            </a></div>
+        <div class="comic-list-item clearfix" data-cid="15592">
+            <a class="cover" href="/15592/"><img src="https://p3.dcarimg.com/origin/ff5200013c343765f269"
+                                                 alt="斗罗大陆4终极斗罗漫画"></a>
+            <div class="comic-item-info">
+                <p class="comic-name"><a href="/15592/">斗罗大陆4终极斗罗</a></p>
+                <p class="comic-author">神漫</p>
+
+                <p class="comic-tags">
+                    <span>连载中</p>
+                <p class="comic-update-at">372 大腿？哦不，指挥官</p>
+            </div>
+            <a class="fast-read-btn" href="/15592/">
+                <i class="ift-searchlist_read1"></i>
+                <span>速看</span>
+            </a></div>
+        <div class="comic-list-item clearfix" data-cid="24829">
+            <a class="cover" href="/24829/"><img
+                    src="https://p3.dcarimg.com/tos-cn-i-8gu37r9deh/0898aff2c5cb4b27a8171c15b2d22988~noop.webp"
+                    alt="斗罗大陆 5 重生唐三漫画"></a>
+            <div class="comic-item-info">
+                <p class="comic-name"><a href="/24829/">斗罗大陆 5 重生唐三</a></p>
+                <p class="comic-author">神漫君</p>
+
+                <p class="comic-tags">
+                    <span>连载中</p>
+                <p class="comic-update-at">75 跟班</p>
+            </div>
+            <a class="fast-read-btn" href="/24829/">
+                <i class="ift-searchlist_read1"></i>
+                <span>速看</span>
+            </a></div>
+        <div class="comic-list-item clearfix" data-cid="17875">
+            <a class="cover" href="/17875/"><img src="https://p3.dcarimg.com/origin/ff320000ee3d7ddf60ef"
+                                                 alt="斗罗大陆2绝世唐门漫画"></a>
+            <div class="comic-item-info">
+                <p class="comic-name"><a href="/17875/">斗罗大陆2绝世唐门</a></p>
+                <p class="comic-author">唐家三少</p>
+
+                <p class="comic-tags">
+                    <span>连载中</p>
+                <p class="comic-update-at">第581话 第二魂灵2</p>
+            </div>
+            <a class="fast-read-btn" href="/17875/">
+                <i class="ift-searchlist_read1"></i>
+                <span>速看</span>
+            </a></div>
+        <div class="comic-list-item clearfix" data-cid="23657">
+            <a class="cover" href="/23657/"><img src="https://p3.dcarimg.com/origin/1381d000407703988fc2d"
+                                                 alt="斗罗大陆 II 绝世唐门漫画"></a>
+            <div class="comic-item-info">
+                <p class="comic-name"><a href="/23657/">斗罗大陆 II 绝世唐门</a></p>
+                <p class="comic-author">神漫</p>
+
+                <p class="comic-tags">
+                    <span>连载中</p>
+                <p class="comic-update-at">340 展示亡灵魔法</p>
+            </div>
+            <a class="fast-read-btn" href="/23657/">
+                <i class="ift-searchlist_read1"></i>
+                <span>速看</span>
+            </a></div>
+        <div class="comic-list-item clearfix" data-cid="23658">
+            <a class="cover" href="/23658/"><img src="https://p3.dcarimg.com/origin/1386a0000cd2c5e7902fe"
+                                                 alt="斗罗大陆 第三部 龙王传说漫画"></a>
+            <div class="comic-item-info">
+                <p class="comic-name"><a href="/23658/">斗罗大陆 第三部 龙王传说</a></p>
+                <p class="comic-author">神漫</p>
+
+                <p class="comic-tags">
+                    <span>连载中</p>
+                <p class="comic-update-at">267 星神剑与分光剑</p>
+            </div>
+            <a class="fast-read-btn" href="/23658/">
+                <i class="ift-searchlist_read1"></i>
+                <span>速看</span>
+            </a></div>
+        <div class="comic-list-item clearfix" data-cid="23732">
+            <a class="cover" href="/23732/"><img src="https://p3.dcarimg.com/origin/1381a0003475be7f68585"
+                                                 alt="斗罗大陆外传 唐门英雄传漫画"></a>
+            <div class="comic-item-info">
+                <p class="comic-name"><a href="/23732/">斗罗大陆外传 唐门英雄传</a></p>
+                <p class="comic-author">神漫</p>
+
+                <p class="comic-tags">
+                    <span>连载中</p>
+                <p class="comic-update-at">39 创世——大神圈（下）</p>
+            </div>
+            <a class="fast-read-btn" href="/23732/">
+                <i class="ift-searchlist_read1"></i>
+                <span>速看</span>
+            </a></div>
+        <div class="comic-list-item clearfix" data-cid="14733">
+            <a class="cover" href="/14733/"><img src="https://p3.dcarimg.com/origin/fe3400011c571cd0b05e"
+                                                 alt="斗罗大陆3龙王传说漫画"></a>
+            <div class="comic-item-info">
+                <p class="comic-name"><a href="/14733/">斗罗大陆3龙王传说</a></p>
+                <p class="comic-author">Dr.大吉Bart.D</p>
+
+                <p class="comic-tags">
+                    <span>连载中</p>
+                <p class="comic-update-at">第322话 抉择2</p>
+            </div>
+            <a class="fast-read-btn" href="/14733/">
+                <i class="ift-searchlist_read1"></i>
+                <span>速看</span>
+            </a></div>
+        <div class="comic-list-item clearfix" data-cid="15557">
+            <a class="cover" href="/15557/"><img src="https://p3.dcarimg.com/origin/ffe100009e243bc9f4f1"
+                                                 alt="斗罗大陆外传唐门英雄传漫画"></a>
+            <div class="comic-item-info">
+                <p class="comic-name"><a href="/15557/">斗罗大陆外传唐门英雄传</a></p>
+                <p class="comic-author">唐家三少（原著） Asoul RIGON</p>
+
+                <p class="comic-tags">
+                    <span>连载中</p>
+                <p class="comic-update-at">第39话 创世——大神圈（下）</p>
+            </div>
+            <a class="fast-read-btn" href="/15557/">
+                <i class="ift-searchlist_read1"></i>
+                <span>速看</span>
+            </a></div>
+        <div class="comic-list-item clearfix" data-cid="14779">
+            <a class="cover" href="/14779/"><img src="https://p3.dcarimg.com/origin/ffd00000a38600ab0626"
+                                                 alt="斗罗大陆II绝世唐门漫画"></a>
+            <div class="comic-item-info">
+                <p class="comic-name"><a href="/14779/">斗罗大陆II绝世唐门</a></p>
+                <p class="comic-author">《绝世唐门》漫画创作组</p>
+
+                <p class="comic-tags">
+                    <span>连载中</p>
+                <p class="comic-update-at">第530话帝寒天1</p>
+            </div>
+            <a class="fast-read-btn" href="/14779/">
+                <i class="ift-searchlist_read1"></i>
+                <span>速看</span>
+            </a></div>
+        <div class="comic-list-item clearfix" data-cid="15224">
+            <a class="cover" href="/15224/"><img src="https://p3.dcarimg.com/origin/ff28000155122eb8ad2e"
+                                                 alt="斗罗大陆外传神界传说漫画"></a>
+            <div class="comic-item-info">
+                <p class="comic-name"><a href="/15224/">斗罗大陆外传神界传说</a></p>
+                <p class="comic-author">神漫 唐家三少</p>
+
+                <p class="comic-tags">
+                    <span>连载中</p>
+                <p class="comic-update-at">你愿意为梦想付费吗</p>
+            </div>
+            <a class="fast-read-btn" href="/15224/">
+                <i class="ift-searchlist_read1"></i>
+                <span>速看</span>
+            </a></div>
+    </div>
+</main>
+<script src="/js/jquery.js"></script>
+<script src="/js/swiper.js"></script>
+<script src="/js/h5.base.js?v=1.536564"></script>
+<script src="/js/layer.js"></script>
+<script src="/js/qiman5.core.js?v=1.999"></script>
+<div style="display:none">
+    <script src="/js/tj.js?v=1.6666671" language="JavaScript"></script>
+</div>
+</body>
+</html>
