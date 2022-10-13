@@ -142,6 +142,15 @@ class CartoonServiceImplTest
     void search()
     {
         List<Cartoon> cartoonList = cartoonService.search("斗罗大陆");
+        System.out.println("数量：" + cartoonList.size());
+        System.out.println(cartoonList);
+    }
+
+    @Test
+    void search2()
+    {
+        List<Cartoon> cartoonList = cartoonService.search("斗破苍穹");
+        System.out.println("数量：" + cartoonList.size());
         System.out.println(cartoonList);
     }
 }
