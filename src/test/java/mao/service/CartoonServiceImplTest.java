@@ -138,4 +138,10 @@ class CartoonServiceImplTest
     }
 
 
+    @Test
+    void search()
+    {
+        List<Cartoon> cartoonList = cartoonService.search("斗罗大陆");
+        System.out.println(cartoonList);
+    }
 }
