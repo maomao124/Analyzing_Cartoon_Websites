@@ -1,13 +1,12 @@
 package mao.service;
 
+import mao.entity.VersionInfo;
 import mao.net.RestfulHTTP;
 import mao.net.SimpleRestfulHTTPImpl;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Project name(项目名称)：解析漫画网站
@@ -49,11 +48,22 @@ class UpdateServiceImplTest
     @Test
     void getVersionInfo()
     {
-        List<String> versionInfo = updateService.getVersionInfo("v1.2");
+        List<String> versionInfo = updateService.getVersionUpdateInfo("v1.2");
         System.out.println(versionInfo);
         if (versionInfo == null)
         {
             getVersionInfo();
+        }
+    }
+
+    @Test
+    void testGetVersionInfo()
+    {
+        VersionInfo versionInfo = updateService.getVersionInfo();
+        System.out.println(versionInfo);
+        if (versionInfo == null)
+        {
+            testGetVersionInfo();
         }
     }
 }

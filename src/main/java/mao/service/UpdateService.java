@@ -1,5 +1,7 @@
 package mao.service;
 
+import mao.entity.VersionInfo;
+
 import java.util.List;
 
 /**
@@ -20,10 +22,17 @@ public interface UpdateService
     String getVersion();
 
     /**
-     * 获取版本信息
+     * 获取版本更新信息
      *
      * @param version 版本,比如v1.2、v1.3
      * @return {@link List}<{@link String}>
      */
-    List<String> getVersionInfo(String version);
+    List<String> getVersionUpdateInfo(String version);
+
+    /**
+     * 获取版本信息
+     *
+     * @return {@link VersionInfo}
+     */
+    VersionInfo getVersionInfo();
 }

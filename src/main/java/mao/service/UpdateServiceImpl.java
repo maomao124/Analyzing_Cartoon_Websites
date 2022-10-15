@@ -1,6 +1,7 @@
 package mao.service;
 
 import mao.constant.URLConstant;
+import mao.entity.VersionInfo;
 import mao.net.RestfulHTTP;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -48,7 +49,7 @@ public class UpdateServiceImpl implements UpdateService
     }
 
     @Override
-    public List<String> getVersionInfo(String version)
+    public List<String> getVersionUpdateInfo(String version)
     {
         String s = http.GET(URLConstant.updateUrl);
         if (s == null)
@@ -71,5 +72,48 @@ public class UpdateServiceImpl implements UpdateService
             }
         }
         return list;
+    }
+
+    /**
+     * 获取版本信息
+     *
+     * @return {@link VersionInfo}
+     */
+    @Override
+    public VersionInfo getVersionInfo()
+    {
+        String s = http.GET(URLConstant.updateUrl);
+        if (s == null)
+        {
+            return null;
+        }
+        Document document = Jsoup.parse(s);
+        Element element = document.getElementById("user-content-12345678901234");
+        String version = element != null ? element.html() : null;
+        if (version == null)
+        {
+            return null;
+        }
+        VersionInfo versionInfo = new VersionInfo();
+        versionInfo.setVersion(version);
+        Element element1 = document.getElementById("user-content-1234567890" + version);
+        if (element1 == null)
+        {
+            versionInfo.setVersionUpdateInfo(null);
+        }
+        else
+        {
+            Elements elements = element1.getElementsByTag("p");
+            List<String> list = new ArrayList<>();
+            for (Element p : elements)
+            {
+                if (p != null)
+                {
+                    list.add(p.html());
+                }
+            }
+            versionInfo.setVersionUpdateInfo(list);
+        }
+        return versionInfo;
     }
 }
