@@ -79,7 +79,7 @@ class CartoonServiceImplTest
     @Test
     void getCartoonList2()
     {
-        List<Cartoon> cartoonList = cartoonService.getCartoonList("http://m.qiman57.com/rank/4-1.html", 4);
+        List<Cartoon> cartoonList = cartoonService.getCartoonList("http://m.qiman58.com/rank/4-1.html", 4);
         System.out.println(cartoonList);
         System.out.println(cartoonList.size());
     }
@@ -87,7 +87,7 @@ class CartoonServiceImplTest
     @Test
     void getCartoonList3()
     {
-        List<Cartoon> cartoonList = cartoonService.getCartoonList("http://m.qiman57.com/rank/1-1.html", 1);
+        List<Cartoon> cartoonList = cartoonService.getCartoonList("http://m.qiman58.com/rank/1-1.html", 1);
         System.out.println(cartoonList);
         System.out.println(cartoonList.size());
     }
@@ -96,7 +96,7 @@ class CartoonServiceImplTest
     @Test
     void getCartoonList4()
     {
-        List<Cartoon> cartoonList = cartoonService.getCartoonList("http://m.qiman57.com/rank/6-1.html", 6);
+        List<Cartoon> cartoonList = cartoonService.getCartoonList("http://m.qiman58.com/rank/6-1.html", 6);
         System.out.println(cartoonList);
         System.out.println(cartoonList.size());
     }
