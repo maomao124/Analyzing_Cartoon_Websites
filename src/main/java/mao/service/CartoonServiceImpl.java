@@ -54,7 +54,7 @@ public class CartoonServiceImpl implements CartoonService
 
     public List<Cartoon> getCartoonListByJson(Map<String, String> requestHeader, int pageNumber, int type)
     {
-        return this.getCartoonListByJson("http://m.qiman57.com/ajaxf/?page_num=" + pageNumber + "&type=" + type,
+        return this.getCartoonListByJson("http://m.qiman58.com/ajaxf/?page_num=" + pageNumber + "&type=" + type,
                 requestHeader);
     }
 

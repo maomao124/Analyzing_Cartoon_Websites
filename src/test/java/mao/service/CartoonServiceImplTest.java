@@ -47,12 +47,12 @@ class CartoonServiceImplTest
         map.put("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) " +
                 "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 Edg/106.0.1370.37");
         map.put("Referer", "http://m.qiman57.com/rank/2-1.html");
-        map.put("Host", "m.qiman57.com");
+        map.put("Host", "m.qiman58.com");
         //map.put("Accept", "application/json, text/javascript, */*; q=0.01");
         //map.put("Accept-Language", "zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6");
         //map.put("Cookie:", "Hm_lvt_9e543e81c8fcea1124d27b659284a99f=1665487230; Hm_lpvt_9e543e81c8fcea1124d27b659284a99f=1665488086");
         List<Cartoon> cartoonList = cartoonService.getCartoonListByJson(
-                "http://m.qiman57.com/ajaxf/?page_num=1&type=2", map);
+                "http://m.qiman58.com/ajaxf/?page_num=1&type=2", map);
         System.out.println(cartoonList);
     }
 
@@ -62,8 +62,8 @@ class CartoonServiceImplTest
         Map<String, String> map = new HashMap<>();
         map.put("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) " +
                 "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 Edg/106.0.1370.37");
-        map.put("Referer", "http://m.qiman57.com/rank/2-1.html");
-        map.put("Host", "m.qiman57.com");
+        map.put("Referer", "http://m.qiman58.com/rank/2-1.html");
+        map.put("Host", "m.qiman58.com");
         List<Cartoon> cartoonList = cartoonService.getCartoonListByJson(map, 4, 2);
         System.out.println(cartoonList);
     }
