@@ -161,4 +161,12 @@ class CartoonServiceImplTest
         System.out.println();
         System.out.println(cartoon);
     }
+
+    @Test
+    void getCartoonById2()
+    {
+        Cartoon cartoon = cartoonService.getCartoonById("25412");
+        System.out.println();
+        System.out.println(cartoon);
+    }
 }
