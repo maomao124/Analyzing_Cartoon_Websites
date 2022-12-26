@@ -153,4 +153,12 @@ class CartoonServiceImplTest
         System.out.println("数量：" + cartoonList.size());
         System.out.println(cartoonList);
     }
+
+    @Test
+    void getCartoonById()
+    {
+        Cartoon cartoon = cartoonService.getCartoonById("21429");
+        System.out.println();
+        System.out.println(cartoon);
+    }
 }

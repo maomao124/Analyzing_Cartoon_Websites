@@ -19,6 +19,11 @@ import java.util.List;
 
 public interface UpdateService
 {
+    /**
+     * 获得版本
+     *
+     * @return {@link String}
+     */
     String getVersion();
 
     /**

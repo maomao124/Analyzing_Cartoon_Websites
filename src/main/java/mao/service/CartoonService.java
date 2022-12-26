@@ -21,9 +21,23 @@ import java.util.List;
 public interface CartoonService
 {
 
+    /**
+     * 得到漫画列表
+     *
+     * @param urlString url字符串
+     * @param type      类型
+     * @return {@link List}<{@link Cartoon}>
+     */
     List<Cartoon> getCartoonList(String urlString, int type);
 
+    /**
+     * 得到漫画目录
+     *
+     * @param id id
+     * @return {@link List}<{@link CartoonItem}>
+     */
     List<CartoonItem> getCartoonItem(int id);
+
 
     /**
      * 搜索
@@ -32,5 +46,14 @@ public interface CartoonService
      * @return {@link List}<{@link Cartoon}>
      */
     List<Cartoon> search(String keyword);
+
+
+    /**
+     * 通过id获取漫画对象
+     *
+     * @param id id
+     * @return {@link Cartoon}
+     */
+    Cartoon getCartoonById(String id);
 
 }

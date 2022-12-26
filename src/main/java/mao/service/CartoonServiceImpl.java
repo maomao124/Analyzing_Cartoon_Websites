@@ -209,4 +209,45 @@ public class CartoonServiceImpl implements CartoonService
         }
         return list;
     }
+
+    /**
+     * 通过id获取漫画对象
+     *
+     * @param id id
+     * @return {@link Cartoon}
+     */
+    @Override
+    public Cartoon getCartoonById(String id)
+    {
+        String url = URLConstant.baseUrl + id + "/";
+        String html = http.GET(url);
+        Document document = Jsoup.parse(html);
+        //System.out.println(document);
+        Element main = document.getElementsByClass("main detail-container").first();
+        //System.out.println(main);
+        if (main == null)
+        {
+            return null;
+        }
+        Element div = main.getElementsByClass("comic-info-box").first();
+        //System.out.println(div);
+        if (div == null)
+        {
+            return null;
+        }
+        Cartoon cartoon = new Cartoon();
+        Element img = div.getElementsByTag("img").first();
+        //System.out.println(img);
+        if (img != null)
+        {
+            String src = img.attr("src");
+            //System.out.println(src);
+            cartoon.setImgUrl(src);
+        }
+        Element div2 = div.getElementsByClass("box-back2").first();
+
+
+
+        return null;
+    }
 }
